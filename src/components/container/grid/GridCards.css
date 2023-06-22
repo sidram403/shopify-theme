@@ -1,0 +1,36 @@
+.offer-card-box{
+    margin: 40px;
+
+}
+.offer-card-box .css-1633um2-MuiPaper-root{
+  box-shadow: none;
+}
+.count-down-text p{
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: gray;
+}
+.offer-perc{
+    font-size: 3.375em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.offer-perc sup{
+    top: -0.5em;
+    font-size: 60%;
+    position: relative;
+    vertical-align: baseline;
+}
+.offer-perc small{
+    display: inline;
+    font-size: 0.30em;
+    letter-spacing: 0;
+    margin-left: -1.5em;
+}
+.offer-product-name{
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: gray;
+}

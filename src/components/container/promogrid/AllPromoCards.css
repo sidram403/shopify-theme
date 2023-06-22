@@ -1,0 +1,32 @@
+.index-content .css-1v5z4dq-MuiPaper-root-MuiCard-root{
+    height:350px ;
+    width: 400px;
+}
+.card-content {
+    padding: 30px !important;
+}
+.card-primary-text {
+    font-size: 20px !important;
+    letter-spacing: 3px;
+}
+.card-header{
+    font-size: 30px !important;
+    letter-spacing: 1px;
+    line-height: 1.75;
+}
+.card-secondary-text{
+    font-size: 16px !important;
+    line-height: 1.53 !important;
+}
+.card-button button{
+    margin-left: 30px;
+    background: black;
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    letter-spacing: 3px;
+}
+.card-newlook{
+    height: 700px;
+    width: 880px;
+}

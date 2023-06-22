@@ -1,0 +1,52 @@
+
+.count-down{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.count-down-heading h1 {
+  padding-bottom: 20px;
+  font-family: "Tenor Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  color: #343434;
+}
+.count-down-heading p {
+  font-family: "Tenor Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #000000;
+}
+
+.count-down-header h1{
+  font-family: "Tenor Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+
+  color: #343434;
+}
+
+.count-down-richtext p{
+    text-transform: uppercase;
+    font-family: "Tenor Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #453c3c;
+}
+.each-countdown{
+    width: 70px;
+    border-right: 2px solid rgb(127 122 122);
+    padding-right: 10px;
+    padding-left: 10px;
+}
