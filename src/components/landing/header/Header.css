@@ -24,6 +24,7 @@ h1,p{
 
 .toolbar {
   left: 0px;
+  padding: 5px 0;
   top: 0px;
   background-color: #ffffff;
   font-size: calc(18px * 0.85);
@@ -46,6 +47,18 @@ h1,p{
   flex: 0 1 auto;
   padding: 0 5px;
 }
+
+.toolbar_item select{
+  font-size: 14px;
+  letter-spacing: .5px;
+}
+
+.toolbar_item img{
+  height: 22px;
+  width: 22px;
+  /* border-radius: 100%; */
+}
+
 .toolbar_item:first-child {
   padding-left: 0;
 }
@@ -66,16 +79,18 @@ h1,p{
   text-rendering: optimizeLegibility;
 }
 .toolbar_item--menu ul li {
-  width: 90px;
+  /* width: 90px; */
+  margin: 0 10px;
   height: 23px;
   left: 150px;
   top: 16px;
-  font-size: 20px;
-  font-family: "Tenor Sans";
+  font-size: 15.5px;
+  font-family: "Twentieth Century";
   font-style: normal;
   /* font-weight: 400; */
   line-height: 23px;
   color: #575454;
+  font-weight: 300;
   text-align: center;
 }
 .toolbar_social {
@@ -84,11 +99,11 @@ h1,p{
   top: 7.19px;
 }
 .toolbar_social li {
-  width: 45px;
-  height: 23px;
+  /* width: 45px;
+  height: 23px; */
   left: 100px;
   top: 16px;
-  font-family: "Tenor Sans";
+  font-family: "Twentieth Century";
   font-style: normal;
   font-weight: 400;
   line-height: 23px;
@@ -96,10 +111,12 @@ h1,p{
 }
 
 .toolbar_social img{
-  width: 26px;
+  width: 16px;
+  height: 16px;
+  margin:0 5px;
 }
 .icons img{
-  width: 23px;
+  width: 18px;
 }
 .no-boolets {
   list-style: none outside;
@@ -136,7 +153,7 @@ option {
 }
 .site-header {
   background: #ffffff;
-  padding: 20px 0;
+  padding: 20px 0 0px;
   position: relative;
 }
 .header-layout {
@@ -190,22 +207,27 @@ option {
   text-transform: uppercase;
   font-size: 15px;
   /* letter-spacing: 4px; */
-  font-family: "Tenor Sans";
+  font-family: "Twentieth Century";
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 23px;
+  font-size: 16px;
+  cursor: pointer;
+  letter-spacing: 3px;
+  margin: 0 15px;
+  /* line-height: 23px; */
 
   color: #575454;
 }
 .site-nav-item span {
   text-transform: uppercase;
   font-size: 15px;
-  font-family: "Tenor Sans";
+    margin: 0 15px;
+  font-family: "Twentieth Century";
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 23px;
+  font-size: 16px;
+  cursor: pointer;
+  letter-spacing: 3px;
 
   color: #575454;
   padding: 7.5px 15px;
@@ -219,31 +241,38 @@ option {
   display: flex;
 }
 .site-nav-icon-item {
-  width: 62px;
+  /* width: 62px; */
 }
 .logo{
-  display: block;
+  /* display: block; */
+  display: flex;
 }
-.logo p{
+.logo .heading{
   margin: 0;
   padding: 0;
-  font-size: 32px;
-  font-family: 'Tenor Sans';
+  font-size: 30px;
+  font-family: "Tenor Sans";
+  font-weight: 600;
 font-style: normal;
-font-weight: 400;
-font-size: 32px;
-line-height: 37px;
-
+/* font-weight: 400; */
+font-size: 28px;
+/* line-height: 37px; */
+display: inline-block;
+/* letter-spacing: 2px; */
 color: #343434;
 }
-.logo span{
+.logo .place{
   
-  font-family: 'Tenor Sans';
+  font-family: "Tenor Sans";
 font-style: normal;
 font-weight: 400;
-font-size: 20px;
-line-height: 23px;
-letter-spacing: 0.51em;
+font-size: 11px;
+display: inline-block;
+font-weight: 600;
+margin-top: -10px;
+/* font-weight: 800; */
+/* line-height: 23px; */
+letter-spacing: 0.65em;
 
 color: #343434;
 }
@@ -265,7 +294,7 @@ color: #343434;
 }
 .slideshow-wrapper p{
   padding: 4px;
-  font-family: 'Tenor Sans';
+  font-family: "Twentieth Century";
 font-style: normal;
 font-weight: 400;
 font-size: 20px;

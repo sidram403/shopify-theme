@@ -8,6 +8,9 @@ import CategoryShowsCards from "./CategoryShowsCards";
 import SeasonShowsCards from "./SeasonShowsCards";
 
 
+import { InstagramFilled } from "@ant-design/icons";
+import { InstagramOutlined } from "@ant-design/icons/lib/icons";
+
 
 const Header = () => {
   return (
@@ -19,10 +22,9 @@ const Header = () => {
               <MenuIcon />
             </div>
             <div className="header-item header-item-logo">
-              <div className="logo">
+              <div className="logo flex items-center">
                 <p>LUXETTE</p>
-                {" "}
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>PARIS</span>
+               <span>PARIS</span>
               </div>
             </div>
             <div className="icons">
@@ -39,39 +41,43 @@ const Header = () => {
           <div className="page-width">
             <div className="toolbar_content">
               <div className="toolbar_item toolbar_item--menu ">
-                <ul className="toolbar_menu inline-list">
+                <ul className="toolbar_menu inline-list font-light text-xs">
                   <li>About</li>
                   <li>Contact</li>
                   <li>FAQ</li>
                 </ul>
               </div>
-              <div className="toolbar_item">
-                <ul className="toolbar_social no-boolets inline-list">
-                  <li>
-                    <img src="icons/instgram.png" alt="" />
-                  </li>
-                  <li>
-                    <img src="icons/facebook.png" alt="" />
-                  </li>
-                  <li>
-                    <img src="icons/pinterest.png" alt="" />
-                  </li>
-                </ul>
-              </div>
-              <div className="toolbar_item">
-                <form action="">
-                  <select>
-                    <option value="Unitied States">
-                      🏁 &nbsp; United States (USD $)
-                    </option>
-                    <option value="Unitied States">
-                      🏁 &nbsp; United States (USD $)
-                    </option>
-                    <option value="Unitied States">
-                      🏁 &nbsp; United States (USD $)
-                    </option>
-                  </select>
-                </form>
+              <div className="flex items-center">
+                <div className="toolbar_item">
+                  <ul className="toolbar_social no-boolets inline-list">
+                    <li>
+                    {/* <InstagramOutlined /> */}
+                      <img src="icons/instgram.png" alt="" />
+                    </li>
+                    <li>
+                      <img src="icons/facebook.png" alt="" />
+                    </li>
+                    <li>
+                      <img src="icons/pinterest.png" alt="" />
+                    </li>
+                  </ul>
+                </div>
+                <div className="toolbar_item">
+                  <form action="" className="flex items-center">
+                   <img style={{borderRadius: "100%"}} src="/images/america-flag.png" className="flag"/>
+                    <select className="font-twentieth">
+                      <option className="font-twentieth" value="Unitied States">
+                        United States (USD $)
+                      </option>
+                      <option className="font-twentieth" value="Unitied States">
+                        United States (USD $)
+                      </option>
+                      <option className="font-twentieth" value="Unitied States">
+                        United States (USD $)
+                      </option>
+                    </select>
+                  </form>
+                </div>
               </div>
             </div>
           </div>
@@ -90,6 +96,7 @@ const Header = () => {
 
                   </div>
                   <div className="header-item header-item-logo--split">
+
                     <div className="header-item header-item--split-left max-sm:hidden">
                       <ul className="site-nav">
                         <li className="site-nav-item">
@@ -123,10 +130,8 @@ const Header = () => {
 
                               
                             </div>
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
+                      
+                      
                     <div className="header-item header-item-logo">
                       <div className="logo">
                         <p>LUXETTE</p>
