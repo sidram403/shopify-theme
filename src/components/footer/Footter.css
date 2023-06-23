@@ -1,0 +1,334 @@
+
+
+.footer {
+    background-color: #fff !important;
+    color: #181717;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px;
+}
+
+.footer-column {
+    text-align: center;
+    flex-basis: 100%;
+    margin-bottom: 20px;
+    display:block ruby;
+}
+
+.footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+}
+
+.footer-column ul li {
+    margin-bottom: 5px;
+    margin-top: 10px;
+    margin-right: 20px;
+    font-size: 14px;
+}
+
+.newsletter-form {
+    text-align: left;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.newsletter-form input[type="email"] {
+    padding: 10px;
+    margin: 20px;
+}
+
+.newsletter-form button {
+    padding: 5px 10px;
+    background-color: #fff;
+    color: #333;
+    border: none;
+    cursor: pointer;
+}
+
+.fa-brands{
+    margin: 8px;
+}
+
+/* Media queries for responsive design */
+
+/* Small devices */
+@media (max-width: 576px) {
+    .footer-content {
+        gap: 0;
+    }
+
+    .footer-column {
+        flex-basis: 100%;
+    }
+    .footer-column ul{
+        align-items: center;
+    }
+
+    .footer-column:not(:last-child) {
+        margin-bottom: 20px;
+        border-bottom: 2px solid #ccc;
+        padding-bottom: 20px;
+    }
+    .newsletter-form{
+        text-align: center;
+    }
+}
+
+/* Medium devices */
+@media (min-width: 577px) and (max-width: 992px) {
+    .footer-column {
+        flex-basis: calc(50% - 100px);
+    }
+}
+
+/* Larger devices */
+@media (min-width: 993px) {
+    .footer .container {
+        justify-content: space-between;
+    }
+
+    .footer-content {
+        flex-wrap: nowrap;
+    }
+
+    .footer-column {
+        flex-basis: auto;
+    }
+}
+
+/* Extra large devices */
+@media (min-width: 1200px) {
+    .footer-column {
+        flex-basis: calc(25% - 100px);
+    }
+}
+.media-icons a i{
+    font-size:25px;
+    padding: 10px;
+    color: black;
+}
+
+
+.media-icons{
+    text-align: center;
+display: contents;
+}
+
+.power img{
+    padding-right: 10px;
+}
+
+/* Arrow button  */
+  .power {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+  }
+  
+  .power .icon {
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+  }
+  
+  .power .icon img {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+  }
+  
+  .power .icon span {
+    font-size: 18px;
+  }
+  
+  .arrow-down {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    cursor: pointer;
+  }
+  
+  .dropdown-content {
+    /* display: none; */
+    position: absolute;
+    bottom: 30px; /* Updated: Position it above the parent element */
+    left: 0;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .icon img {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+  }
+  
+  .power:hover .dropdown-content {
+    display: block;
+  }
+  
+
+
+
+  /* button */
+  .button a{
+    background: black;
+    color: white;
+    margin: 20px;
+    padding: 10px;
+    text-decoration: none !important;
+  }
+
+
+.pickup-card {
+    background-color: #fff;
+    color: #333;
+    width: 90%;
+    max-width: 400px;
+    height: 40vh;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    text-align: left;
+}
+
+.pickup-card h2 {
+    font-size: 24px;
+}
+
+.pickup-card p {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.background {
+    position: relative;
+    margin-top:40px;
+}
+
+.background img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    max-height: 70vh;
+}
+
+
+@media (max-width: 576px) {
+    .background img {
+        height: 50vh;
+    }
+
+    .pickup-card {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+    }
+}
+
+@media (min-width: 576px) {
+    .pickup-card {
+        width: 30%;
+    }
+}
+
+@media (min-width: 768px) {
+    .pickup-card {
+        width: 30%;
+        left: 20%;
+    }
+}
+
+@media (min-width: 992px) {
+    .pickup-card {
+        width: 30%;
+        left: 20%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .pickup-card {
+        width: 40%;
+    }
+}
+
+/* Small devices */
+@media (max-width: 576px) {
+.footer-column {
+width: 100%;
+text-align: center !important;
+margin-bottom: 20px;
+}
+
+.newsletter-form input[type="email"] {
+width: 100%;
+}
+
+.media-icons {
+margin-right: 0;
+justify-content: center;
+text-align: center;
+}
+}
+
+/* Medium devices */
+@media (min-width: 577px) and (max-width: 992px) {
+.footer-column {
+flex-basis: calc(50% - 100px);
+}
+}
+
+/* Larger devices */
+@media (min-width: 993px) and (max-width: 1199px) {
+.footer-column {
+flex-basis: calc(33.33% - 100px);
+}
+}
+
+/* Extra large devices */
+@media (min-width: 1200px) {
+.footer-column {
+flex-basis: calc(25% - 100px);
+}
+}

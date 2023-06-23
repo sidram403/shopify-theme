@@ -1,6 +1,7 @@
 import React from "react";
 import "./Header.css";
 import AliceCarousel from "react-alice-carousel";
+import MenuIcon from '@mui/icons-material/Menu';
 
 
 
@@ -8,10 +9,32 @@ const Header = () => {
   return (
     <div>
       <div className="header">
-        <div className="toolbar">
+        <div className="responsive-header sm:hidden">
+          <div className="grid grid-rows-1 grid-flow-col gap-4">
+            <div className="menu-icon">
+              <MenuIcon />
+            </div>
+            <div className="header-item header-item-logo">
+              <div className="logo">
+                <p>LUXETTE</p>
+                {" "}
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>PARIS</span>
+              </div>
+            </div>
+            <div className="icons">
+              {/* search icon */}
+              <img src="icons/search.png" alt="" />
+              <img src="icons/cart.png" alt="" />
+
+            </div>
+          </div>
+
+        </div>
+
+        <div className="toolbar max-sm:hidden">
           <div className="page-width">
             <div className="toolbar_content">
-              <div className="toolbar_item toolbar_item--menu">
+              <div className="toolbar_item toolbar_item--menu ">
                 <ul className="toolbar_menu inline-list">
                   <li>About</li>
                   <li>Contact</li>
@@ -49,7 +72,7 @@ const Header = () => {
             </div>
           </div>
         </div>
-        <div className="sticky-header">
+        <div className="sticky-header max-sm:hidden">
           <div className="stickywrapper">
             <header className="site-header">
               <div className="page-width">
@@ -58,9 +81,12 @@ const Header = () => {
                     <div className="search-icon icons">
                       {/* search icon */}
                       <img src="icons/search.png" alt="" />
+
                     </div>
-                    <div className="header-item header-item-logo--split">
-                      <div className="header-item header-item--split-left">
+                    
+                  </div>
+                  <div className="header-item header-item-logo--split">
+                      <div className="header-item header-item--split-left max-sm:hidden">
                         <ul className="site-nav">
                           <li className="site-nav-item">
                             <form action="">
@@ -85,7 +111,7 @@ const Header = () => {
                           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>PARIS</span>
                         </div>
                       </div>
-                      <div className="header-item header-item--split-right">
+                      <div className="header-item header-item--split-right max-sm:hidden">
                         <ul className="site-nav">
                           <li className="site-nav-item">
                             <span>Journal</span>
@@ -110,7 +136,6 @@ const Header = () => {
                         </div>
                       </div>
                     </div>
-                  </div>
                 </div>
               </div>
             </header>
@@ -124,7 +149,7 @@ const Header = () => {
               {" "}
               <span>This is</span> Hello World!
             </p> */}
-            <AliceCarousel autoPlay autoPlayInterval="5000" animationEasingFunction="ease"  disableDotsControls disableButtonsControls infinite>
+            <AliceCarousel autoPlay autoPlayInterval="5000" animationEasingFunction="ease" disableDotsControls disableButtonsControls infinite>
               <p className="sliderText">FREE SHIPPING on orders above $100</p>
               <p className="sliderText">FREE SHIPPING on orders above $100</p>
             </AliceCarousel>

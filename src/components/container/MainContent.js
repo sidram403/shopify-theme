@@ -7,6 +7,7 @@ import OfferCards from './grid/OfferCards'
 import Popular from './popular/Popular'
 import NewProductPromo from './promogrid/NewProductPromo'
 import ShopNewLookCard from './promogrid/ShopNewLookCard'
+import JournalContent from './journal/JournalContent'
 
 const MainContent = () => {
   return (
@@ -21,6 +22,7 @@ const MainContent = () => {
       <Popular />
       <NewProductPromo />
       <ShopNewLookCard />
+      <JournalContent />
     </div>
   )
 }

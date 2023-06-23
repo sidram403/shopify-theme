@@ -9,7 +9,10 @@ const Timer = () => {
         seconds: 0
     });
     useEffect(() => {
-        const countdownDate = new Date('2023-06-23').getTime();
+        const currentDate = new Date(); // Get the current date and time
+        currentDate.setDate(currentDate.getDate() + 2); // Add 2 days to the current date
+
+        const countdownDate = currentDate.getTime();
 
         const interval = setInterval(() => {
             const now = new Date().getTime();

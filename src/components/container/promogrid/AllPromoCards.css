@@ -1,32 +1,40 @@
-.index-content .css-1v5z4dq-MuiPaper-root-MuiCard-root{
+/* .css-1v5z4dq-MuiPaper-root-MuiCard-root{
     height:350px ;
     width: 400px;
-}
-.card-content {
+} */
+.new-look-card-content {
     padding: 30px !important;
 }
-.card-primary-text {
+.new-look-card-primary-text {
     font-size: 20px !important;
     letter-spacing: 3px;
 }
-.card-header{
+.new-look-card-header{
     font-size: 30px !important;
     letter-spacing: 1px;
     line-height: 1.75;
 }
-.card-secondary-text{
+.new-look-card-secondary-text{
     font-size: 16px !important;
     line-height: 1.53 !important;
 }
-.card-button button{
+.new-look-card-button button{
     margin-left: 30px;
     background: black;
     color: white;
     padding: 10px;
     font-size: 18px;
     letter-spacing: 3px;
+    margin-bottom: 20px;
 }
-.card-newlook{
+.new-look-card-newlook{
     height: 700px;
     width: 880px;
+}
+.new-look-right-side-image{
+    height: 400px;
+    width: 280px;
+}
+.new-look-left-side-image{
+    height: 900px;
 }

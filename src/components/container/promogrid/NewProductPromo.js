@@ -26,18 +26,18 @@ const NewProductPromo = () => {
 
     const card = (
         <React.Fragment>
-            <CardContent className='card-content'>
-                <Typography className='card-primary-text' sx={{ fontSize: 14 }} color="text.secondary" gutterBottom >
+            <CardContent className='new-look-card-content'>
+                <Typography className='new-look-card-primary-text' sx={{ fontSize: 14 }} color="text.secondary" gutterBottom >
                     NEW FOR 2023
                 </Typography>
-                <Typography className='card-header' variant="h5" component="div">
+                <Typography className='new-look-card-header' variant="h5" component="div">
                     BOUTIQUE STYLE
                 </Typography>
 
-                <Typography className='card-secondary-text' variant="body2">Fierce elegance is about authenticity, refinement, beauty and grace. It’s a powerful lady like class with a touch of sophisticated sass that creates a sleek and commanding presence.
+                <Typography className='new-look-card-secondary-text' variant="body2">Fierce elegance is about authenticity, refinement, beauty and grace. It’s a powerful lady like class with a touch of sophisticated sass that creates a sleek and commanding presence.
                 </Typography>
             </CardContent>
-               <Typography className='card-button'>
+               <Typography className='new-look-card-button'>
                 <Button size="small" className='uppercase text-white '>View LookBook</Button>
                </Typography>
         </React.Fragment>
@@ -49,9 +49,9 @@ const NewProductPromo = () => {
                     <div className="mt-6 space-y-12 lg:grid lg:grid-cols-1 lg:gap-x-6 lg:space-y-0">
                         <div className="group relative">
                             <div className=" relative h-140 w-full overflow-hidden  bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1  sm:h-152">
-                                <div className='index-content' style={styles.indexContent1}>
+                                <div className='' style={styles.indexContent1}>
                                     <div className='ml-24'>
-                                        <Box sx={{ minWidth: 400, height: 400  }}>
+                                        <Box sx={{ maxWidth: 400, height: 400  }}>
                                             <Card variant="outlined">{card}</Card>
                                         </Box>
                                     </div>

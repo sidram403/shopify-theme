@@ -1,23 +1,6 @@
 import * as React from 'react';
-import Grid from '@mui/material/Grid';
-import FormLabel from '@mui/material/FormLabel';
-import FormControl from '@mui/material/FormControl';
-import FormControlLabel from '@mui/material/FormControlLabel';
-// import HighlightedCode from 'docs/src/modules/components/HighlightedCode';
-import RadioGroup from '@mui/material/RadioGroup';
-import Radio from '@mui/material/Radio';
-import Paper from '@mui/material/Paper';
 
 export default function CategoryCards() {
-  const [spacing, setSpacing] = React.useState(2);
-
-  const handleChange = (event) => {
-    setSpacing(Number(event.target.value));
-  };
-
-  const jsx = `
-<Grid container spacing={${spacing}}>
-`;
 
   const products = [
     {
@@ -60,7 +43,7 @@ export default function CategoryCards() {
                 <img
                   src={product.imageSrc}
                   alt={product.imageAlt}
-                  className="h-full w-full object-cover object-center lg:h-full lg:w-full transition-transform ease-out duration-300 hover:scale-105"
+                  className="h-full w-full object-cover object-center lg:h-full lg:w-full  transition-transform ease-out duration-300 hover:scale-105"
                 />
                 <div className="absolute inset-0 flex items-center justify-center">
                   <button className="bg-white text-black px-4 py-2 uppercase tracking-widest	">Button</button>

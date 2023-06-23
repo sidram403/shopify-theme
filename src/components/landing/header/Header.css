@@ -14,6 +14,14 @@ h1,p{
   width: 100%;
   height: 153px;
 }
+.responsive-header{
+  margin: 30px;
+  
+}
+.menu-icon .MuiSvgIcon-root{
+  font-size: 60px !important;
+}
+
 .toolbar {
   left: 0px;
   top: 0px;
@@ -159,7 +167,7 @@ option {
   text-align: center;
 }
 .header-item-logo {
-  margin: 0 0 0 30px;
+  margin: 0 25px;
 }
 .header-item--split-left {
   justify-content: flex-end;
@@ -270,5 +278,19 @@ color: #FFFFFF;
   font-size: 35px !important;
   padding-left: 10px !important;
   color: #5d5959 !important;
+}
+
+@media (max-width: 576px){
+  .header{
+    height: auto;
+  }
+  .header-item-logo{
+    margin:0;
+  }
+  .icons img{
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+  }
 }
 
