@@ -8,8 +8,8 @@ import CategoryShowsCards from "./CategoryShowsCards";
 import SeasonShowsCards from "./SeasonShowsCards";
 
 
-import { InstagramFilled } from "@ant-design/icons";
-import { InstagramOutlined } from "@ant-design/icons/lib/icons";
+// import { InstagramFilled } from "@ant-design/icons";
+// import { InstagramOutlined } from "@ant-design/icons/lib/icons";
 
 
 const Header = () => {
@@ -51,7 +51,7 @@ const Header = () => {
                 <div className="toolbar_item">
                   <ul className="toolbar_social no-boolets inline-list">
                     <li>
-                    {/* <InstagramOutlined /> */}
+                      {/* <InstagramOutlined /> */}
                       <img src="icons/instgram.png" alt="" />
                     </li>
                     <li>
@@ -100,7 +100,7 @@ const Header = () => {
                     <div className="header-item header-item--split-left max-sm:hidden">
                       <ul className="site-nav">
                         <li className="site-nav-item">
-                          
+
                           <div class="category-view-on-header">
                             <div class="icon">
                               <span className="border-line">Shop</span>
@@ -110,14 +110,14 @@ const Header = () => {
                             </div>
                             <div class="arrow-down" onclick="toggleDropdown()">
                               <KeyboardArrowDownIcon />
-                              
+
                             </div>
                           </div>
 
 
                         </li>
                         <li className="site-nav-item">
-                          
+
                           <div class="category-view-on-header">
                             <div class="icon">
                               <span className='border-line'>Season</span>
@@ -128,29 +128,33 @@ const Header = () => {
                             <div class="arrow-down" onclick="toggleDropdown()">
                               <KeyboardArrowDownIcon />
 
-                              
+
                             </div>
-                      
+                            </div>
+                      </li>
+                      </ul>
+                    </div>
                       
                     <div className="header-item header-item-logo">
                       <div className="logo">
                         <p>LUXETTE</p>
                         {" "}
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>PARIS</span>
+                         <span>PARIS</span>
                       </div>
                     </div>
                     <div className="header-item header-item--split-right max-sm:hidden">
                       <ul className="site-nav">
                         <li className="site-nav-item">
-                          <span>Journal</span>
+                          <span className="border-line">Journal</span>
                         </li>
                         <li className="site-nav-item">
-                          <span>Features</span>
+                          <span className="border-line">Features</span>
                         </li>
                       </ul>
                     </div>
-                  </div>
-                  <div className="header-item header-item-icons">
+                  
+                </div>
+                <div className="header-item header-item-icons">
                     <div className="site-nav">
                       <div className="site-nav-icon">
                         <div className="site-nav-icon-item icons">
@@ -164,11 +168,11 @@ const Header = () => {
                       </div>
                     </div>
                   </div>
-                </div>
+              </div>
               </div>
             </header>
           </div>
-        </div>
+        
       </div>
       <div className="announcement-bar">
         <div className="page-width">
@@ -184,6 +188,7 @@ const Header = () => {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };

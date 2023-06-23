@@ -12,7 +12,7 @@ h1,p{
 
 .header {
   width: 100%;
-  height: 153px;
+  /* height: 153px; */
 }
 .responsive-header{
   margin: 30px;
@@ -32,7 +32,6 @@ h1,p{
 }
 .page-width {
   margin: 0 auto;
-  max-width: 1500px;
   width: 95%;
   height: 100%;
 }
@@ -171,7 +170,7 @@ option {
 }
 .header-item-left,
 .header-item-icons {
-  flex: 1 1 145px;
+  flex: 1 1 130px;
 }
 .header-item-logo--split {
   align-items: center;
@@ -241,11 +240,24 @@ option {
   display: flex;
 }
 .site-nav-icon-item {
-  /* width: 62px; */
+  width: 62px;
 }
 .logo{
-  /* display: block; */
-  display: flex;
+  display: block;
+  text-align: center;
+
+  /* display: flex; */
+}
+.logo p{
+  font-size: 35px;
+  font-family: "Tenor Sans";
+  font-style: normal;
+
+
+}
+.logo span{
+  font-size: 17px;
+  letter-spacing: 7px;
 }
 .logo .heading{
   margin: 0;
@@ -356,10 +368,10 @@ color: #FFFFFF;
   cursor: pointer;
 }
 .show-category-card{
-  left: -310px;
+  left: -280px;
   opacity: 0;
   position: absolute;
-  top: 80px;
+  top: 74px;
   visibility: hidden;
   z-index:999;
   background-color: white;
@@ -367,11 +379,11 @@ color: #FFFFFF;
   height: 400px;
 }
 .show-category-card-season{
-  left:-422px;
+  left:-419px;
 }
 .category-view-on-header:hover .show-category-card{
   opacity: 1;
-  top: 80px;
+  top: 74px;
   visibility: visible;
 }
 .header-category-name{

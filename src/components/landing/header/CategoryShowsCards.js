@@ -7,7 +7,7 @@ const CategoryShowsCards = () => {
             id: 1,
             name: 'Tops',
             href: '#',
-            imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg',
+            imageSrc: 'images/tops.jpg',
             imageAlt: "Front of men's Basic Tee in black.",
             categories:[
                 {
@@ -41,7 +41,7 @@ const CategoryShowsCards = () => {
             id: 2,
             name: 'Tunics',
             href: '#',
-            imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-02.jpg',
+            imageSrc: 'images/tunics.jpg',
             imageAlt: "Front of men's Basic Tee in black.",
             categories:[
                 {
@@ -67,7 +67,7 @@ const CategoryShowsCards = () => {
             id: 3,
             name: 'Dresses',
             href: '#',
-            imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-03.jpg',
+            imageSrc: 'images/dresses.jpg',
             imageAlt: "Front of men's Basic Tee in black.",
             categories:[
                 {
@@ -98,7 +98,7 @@ const CategoryShowsCards = () => {
             id: 4,
             name: 'Accessories',
             href: '#',
-            imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-04.jpg',
+            imageSrc: 'images/accessories.jpg',
             imageAlt: "Front of men's Basic Tee in black.",
             categories:[
                 {
