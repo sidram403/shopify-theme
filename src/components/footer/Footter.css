@@ -164,16 +164,7 @@ display: contents;
     font-size: 18px;
   }
   
-  .arrow-down {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 20px;
-    height: 20px;
-    background-color: #f9f9f9;
-    border: 1px solid #ccc;
-    cursor: pointer;
-  }
+  
   
   .dropdown-content {
     /* display: none; */
@@ -194,11 +185,7 @@ display: contents;
     color: #333;
   }
   
-  .icon img {
-    width: 16px;
-    height: 16px;
-    margin-right: 5px;
-  }
+  
   
   .power:hover .dropdown-content {
     display: block;

@@ -2,8 +2,15 @@ import React from "react";
 import "./Header.css";
 import AliceCarousel from "react-alice-carousel";
 import MenuIcon from '@mui/icons-material/Menu';
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import CategoryCards from "../../container/grid/CategoryCards";
+import CategoryShowsCards from "./CategoryShowsCards";
+import SeasonShowsCards from "./SeasonShowsCards";
+
+
 import { InstagramFilled } from "@ant-design/icons";
 import { InstagramOutlined } from "@ant-design/icons/lib/icons";
+
 
 const Header = () => {
   return (
@@ -86,58 +93,77 @@ const Header = () => {
                       <img src="icons/search.png" alt="" />
 
                     </div>
-                    
+
                   </div>
                   <div className="header-item header-item-logo--split">
-                      <div className="header-item header-item--split-left max-sm:hidden">
-                        <ul className="site-nav">
-                          <li className="site-nav-item">
-                            <form action="">
-                              <select>
-                                <option value="shop">Shop</option>
-                              </select>
-                            </form>
-                          </li>
-                          <li className="site-nav-item">
-                            <form action="">
-                              <select>
-                                <option value="shop">Season</option>
-                              </select>
-                            </form>
-                          </li>
-                        </ul>
-                      </div>
-                      <div className="header-item header-item-logo">
-                        <div className="logo flex-col justify-items-center items-center">
-                          <span className="heading">LUXETTE</span>
-                        <span className="place">PARIS</span>
-                        </div>
-                      </div>
-                      <div className="header-item header-item--split-right max-sm:hidden">
-                        <ul className="site-nav">
-                          <li className="site-nav-item">
-                            <span>Journal</span>
-                          </li>
-                          <li className="site-nav-item">
-                            <span>Features</span>
-                          </li>
-                        </ul>
+
+                    <div className="header-item header-item--split-left max-sm:hidden">
+                      <ul className="site-nav">
+                        <li className="site-nav-item">
+                          
+                          <div class="category-view-on-header">
+                            <div class="icon">
+                              <span className="border-line">Shop</span>
+                              <div className="show-category-card">
+                                <CategoryShowsCards />
+                              </div>
+                            </div>
+                            <div class="arrow-down" onclick="toggleDropdown()">
+                              <KeyboardArrowDownIcon />
+                              
+                            </div>
+                          </div>
+
+
+                        </li>
+                        <li className="site-nav-item">
+                          
+                          <div class="category-view-on-header">
+                            <div class="icon">
+                              <span className='border-line'>Season</span>
+                              <div className="show-category-card show-category-card-season">
+                                <SeasonShowsCards />
+                              </div>
+                            </div>
+                            <div class="arrow-down" onclick="toggleDropdown()">
+                              <KeyboardArrowDownIcon />
+
+                              
+                            </div>
+                      
+                      
+                    <div className="header-item header-item-logo">
+                      <div className="logo">
+                        <p>LUXETTE</p>
+                        {" "}
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>PARIS</span>
                       </div>
                     </div>
-                    <div style={{justifyContent:"end"}} className="header-item header-item-icons">
-                      <div className="site-nav">
-                        <div style={{paddingRight:"0"}} className="site-nav-icon pe-0">
-                          <div className="site-nav-icon-item icons">
-                            {/* user icon */}
-                            <img src="icons/about.png" alt="" />
-                          </div>
-                          <div style={{marginLeft:"20px"}} className="site-nav-icon-item">
-                            {/* add cart icon */}
-                            <img style={{height:"28.5px", height:"22.5px"}} src="icons/cart.png" alt="" />
-                          </div>
+                    <div className="header-item header-item--split-right max-sm:hidden">
+                      <ul className="site-nav">
+                        <li className="site-nav-item">
+                          <span>Journal</span>
+                        </li>
+                        <li className="site-nav-item">
+                          <span>Features</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div className="header-item header-item-icons">
+                    <div className="site-nav">
+                      <div className="site-nav-icon">
+                        <div className="site-nav-icon-item icons">
+                          {/* user icon */}
+                          <img src="icons/about.png" alt="" />
+                        </div>
+                        <div className="site-nav-icon-item icons">
+                          {/* add cart icon */}
+                          <img src="icons/cart.png" alt="" />
                         </div>
                       </div>
                     </div>
+                  </div>
                 </div>
               </div>
             </header>
