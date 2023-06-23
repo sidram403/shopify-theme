@@ -87,39 +87,6 @@ const Footer = () => {
                 </form>
             </div>
             
-            {/* <div className="arrow-down" onclick="toggleDropdown()">
-                <span className="fas fa-angle-down"></span>
-                <div className="dropdown-content">
-                    <a href="#">
-                        <img src="images/currancy.png" alt="Canada" />
-                        Canada (CAD $)
-                    </a>
-                    <a href="#">
-                        <img src="images/currancy.png" alt="United Kingdom" />
-                        United Kingdom (GBP £)
-                    </a>
-                    <a href="#">
-                        <img src="aus-icon.png" alt="Australia" />
-                        Australia (AUD $)
-                    </a>
-                    <a href="#">
-                        <img src="aus-icon.png" alt="Australia" />
-                        Australia (AUD $)
-                    </a>
-                    <a href="#">
-                        <img src="aus-icon.png" alt="Australia" />
-                        Australia (AUD $)
-                    </a>
-                    <a href="#">
-                        <img src="aus-icon.png" alt="Australia" />
-                        Australia (AUD $)
-                    </a>
-                    <a href="#">
-                        <img src="aus-icon.png" alt="Australia" />
-                        Australia (AUD $)
-                    </a>
-                </div>
-            </div> */}
         </div>
 
         <div className="logo" style={{marginTop: 20, fontSize: 25}}>
