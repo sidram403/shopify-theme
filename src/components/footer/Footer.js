@@ -84,6 +84,7 @@ const Footer = () => {
                 <li>Fall 2022</li>
               </ul>
             </div>
+<<<<<<< HEAD
             <div className="footer-column">
               <ul>
                 <li>About</li>
@@ -121,6 +122,9 @@ const Footer = () => {
 
             </div>
           </div>
+=======
+            
+>>>>>>> 2a6570057ee3c13692104209ee22f00b7ccb30c7
         </div>
 
 

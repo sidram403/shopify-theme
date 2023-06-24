@@ -2,7 +2,14 @@ import React from "react";
 import "./Header.css";
 import AliceCarousel from "react-alice-carousel";
 import MenuIcon from '@mui/icons-material/Menu';
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import CategoryCards from "../../container/grid/CategoryCards";
+import CategoryShowsCards from "./CategoryShowsCards";
+import SeasonShowsCards from "./SeasonShowsCards";
 
+
+// import { InstagramFilled } from "@ant-design/icons";
+// import { InstagramOutlined } from "@ant-design/icons/lib/icons";
 
 
 const Header = () => {
@@ -15,10 +22,9 @@ const Header = () => {
               <MenuIcon />
             </div>
             <div className="header-item header-item-logo">
-              <div className="logo">
+              <div className="logo flex items-center">
                 <p>LUXETTE</p>
-                {" "}
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>PARIS</span>
+               <span>PARIS</span>
               </div>
             </div>
             <div className="icons">
@@ -35,39 +41,43 @@ const Header = () => {
           <div className="page-width">
             <div className="toolbar_content">
               <div className="toolbar_item toolbar_item--menu ">
-                <ul className="toolbar_menu inline-list">
+                <ul className="toolbar_menu inline-list font-light text-xs">
                   <li>About</li>
                   <li>Contact</li>
                   <li>FAQ</li>
                 </ul>
               </div>
-              <div className="toolbar_item">
-                <ul className="toolbar_social no-boolets inline-list">
-                  <li>
-                    <img src="icons/instgram.png" alt="" />
-                  </li>
-                  <li>
-                    <img src="icons/facebook.png" alt="" />
-                  </li>
-                  <li>
-                    <img src="icons/pinterest.png" alt="" />
-                  </li>
-                </ul>
-              </div>
-              <div className="toolbar_item">
-                <form action="">
-                  <select>
-                    <option value="Unitied States">
-                      🏁 &nbsp; United States (USD $)
-                    </option>
-                    <option value="Unitied States">
-                      🏁 &nbsp; United States (USD $)
-                    </option>
-                    <option value="Unitied States">
-                      🏁 &nbsp; United States (USD $)
-                    </option>
-                  </select>
-                </form>
+              <div className="flex items-center">
+                <div className="toolbar_item">
+                  <ul className="toolbar_social no-boolets inline-list">
+                    <li>
+                      {/* <InstagramOutlined /> */}
+                      <img src="icons/instgram.png" alt="" />
+                    </li>
+                    <li>
+                      <img src="icons/facebook.png" alt="" />
+                    </li>
+                    <li>
+                      <img src="icons/pinterest.png" alt="" />
+                    </li>
+                  </ul>
+                </div>
+                <div className="toolbar_item">
+                  <form action="" className="flex items-center">
+                   <img style={{borderRadius: "100%"}} src="/images/america-flag.png" className="flag"/>
+                    <select className="font-twentieth">
+                      <option className="font-twentieth" value="Unitied States">
+                        United States (USD $)
+                      </option>
+                      <option className="font-twentieth" value="Unitied States">
+                        United States (USD $)
+                      </option>
+                      <option className="font-twentieth" value="Unitied States">
+                        United States (USD $)
+                      </option>
+                    </select>
+                  </form>
+                </div>
               </div>
             </div>
           </div>
@@ -83,64 +93,86 @@ const Header = () => {
                       <img src="icons/search.png" alt="" />
 
                     </div>
-                    
+
                   </div>
                   <div className="header-item header-item-logo--split">
-                      <div className="header-item header-item--split-left max-sm:hidden">
-                        <ul className="site-nav">
-                          <li className="site-nav-item">
-                            <form action="">
-                              <select>
-                                <option value="shop">Shop</option>
-                              </select>
-                            </form>
-                          </li>
-                          <li className="site-nav-item">
-                            <form action="">
-                              <select>
-                                <option value="shop">Season</option>
-                              </select>
-                            </form>
-                          </li>
-                        </ul>
-                      </div>
-                      <div className="header-item header-item-logo">
-                        <div className="logo">
-                          <p>LUXETTE</p>
-                          {" "}
-                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>PARIS</span>
-                        </div>
-                      </div>
-                      <div className="header-item header-item--split-right max-sm:hidden">
-                        <ul className="site-nav">
-                          <li className="site-nav-item">
-                            <span>Journal</span>
-                          </li>
-                          <li className="site-nav-item">
-                            <span>Features</span>
-                          </li>
-                        </ul>
+
+                    <div className="header-item header-item--split-left max-sm:hidden">
+                      <ul className="site-nav">
+                        <li className="site-nav-item">
+
+                          <div class="category-view-on-header">
+                            <div class="icon">
+                              <span className="border-line">Shop</span>
+                              <div className="show-category-card">
+                                <CategoryShowsCards />
+                              </div>
+                            </div>
+                            <div class="arrow-down" onclick="toggleDropdown()">
+                              <KeyboardArrowDownIcon />
+
+                            </div>
+                          </div>
+
+
+                        </li>
+                        <li className="site-nav-item">
+
+                          <div class="category-view-on-header">
+                            <div class="icon">
+                              <span className='border-line'>Season</span>
+                              <div className="show-category-card show-category-card-season">
+                                <SeasonShowsCards />
+                              </div>
+                            </div>
+                            <div class="arrow-down" onclick="toggleDropdown()">
+                              <KeyboardArrowDownIcon />
+
+
+                            </div>
+                            </div>
+                      </li>
+                      </ul>
+                    </div>
+                      
+                    <div className="header-item header-item-logo">
+                      <div className="logo">
+                        <p>LUXETTE</p>
+                        {" "}
+                         <span>PARIS</span>
                       </div>
                     </div>
-                    <div className="header-item header-item-icons">
-                      <div className="site-nav">
-                        <div className="site-nav-icon">
-                          <div className="site-nav-icon-item icons">
-                            {/* user icon */}
-                            <img src="icons/about.png" alt="" />
-                          </div>
-                          <div className="site-nav-icon-item icons">
-                            {/* add cart icon */}
-                            <img src="icons/cart.png" alt="" />
-                          </div>
-                        </div>
-                      </div>
+                    <div className="header-item header-item--split-right max-sm:hidden">
+                      <ul className="site-nav">
+                        <li className="site-nav-item">
+                          <span className="border-line">Journal</span>
+                        </li>
+                        <li className="site-nav-item">
+                          <span className="border-line">Features</span>
+                        </li>
+                      </ul>
                     </div>
+                  
                 </div>
+                <div className="header-item header-item-icons">
+                    <div className="site-nav">
+                      <div className="site-nav-icon">
+                        <div className="site-nav-icon-item icons">
+                          {/* user icon */}
+                          <img src="icons/about.png" alt="" />
+                        </div>
+                        <div className="site-nav-icon-item icons">
+                          {/* add cart icon */}
+                          <img src="icons/cart.png" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
               </div>
             </header>
           </div>
-        </div>
+        
       </div>
       <div className="announcement-bar">
         <div className="page-width">
@@ -156,6 +188,7 @@ const Header = () => {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };

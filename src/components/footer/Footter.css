@@ -159,6 +159,59 @@ display: contents;
   
 
 /* Arrow button  */
+<<<<<<< HEAD
+=======
+  .power {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+  }
+  
+  .power .icon {
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+  }
+  
+  .power .icon img {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+  }
+  
+  .power .icon span {
+    font-size: 18px;
+  }
+  
+  
+  
+  .dropdown-content {
+    /* display: none; */
+    position: absolute;
+    bottom: 30px; /* Updated: Position it above the parent element */
+    left: 0;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  
+  
+  .power:hover .dropdown-content {
+    display: block;
+  }
+  
+
+>>>>>>> 2a6570057ee3c13692104209ee22f00b7ccb30c7
 
 
   /* button */
