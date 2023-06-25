@@ -73,7 +73,7 @@ const Content = () => {
                         <div className='hero-image-text' style={styles.heroText}>
                             <h1 style={styles.primaryText}>SUMMER VIBES</h1>
                             <p></p>
-                            <a href="" className='hero-image-btn' style={styles.heroBtn}>Shop All</a> 
+                            <a href="#" className='hero-image-btn' style={styles.heroBtn}>Shop All</a> 
                         </div>
                     </div>
                     <div className='hero-image-content1' style={styles.imageContent2}>

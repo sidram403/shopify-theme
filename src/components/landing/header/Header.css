@@ -371,7 +371,7 @@ color: #FFFFFF;
 .border-line:hover::after{
   width: 100%;
 }
-.arrow-down {
+.arrow-down-header {
   display: flex;
   align-items: center;
   justify-content: center;

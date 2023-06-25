@@ -50,7 +50,6 @@ const Footer = () => {
       <div className="background ">
         <a href="https://goo.gl/maps/QyZs1dBswWTdZ8oc6">
           <img src="images/location.png" alt="location" />
-          <img src="images/location.png" alt="location" />
         </a>
         <div className="pickup-card">
           <h2>Local pickup available</h2>
@@ -59,23 +58,13 @@ const Footer = () => {
           <p>Mon - Fri, 8:30am - 10:30pm</p>
           <p>Saturday, 8:30am - 10:30pm</p>
           <p>Sunday, 8:30am - 10:30pm</p>
-          <h2>Local pickup available</h2>
-          <p>301 Front St W</p>
-          <p>Toronto, Canada</p>
-          <p>Mon - Fri, 8:30am - 10:30pm</p>
-          <p>Saturday, 8:30am - 10:30pm</p>
-          <p>Sunday, 8:30am - 10:30pm</p>
-
+          
           <div className="button" style={{ marginTop: 30 }}>
             <a href="https://www.google.com/maps/dir//Sambhram+Institute+of+Technology,+Hesaraghatta+Rd,+Jalahalli+East,+Bengaluru,+Karnataka+560097/@13.0895777,77.5431059,17z/data=!4m18!1m8!3m7!1s0x3bae2297b21d347b:0xbff7ae2269947666!2sSambhram+Institute+of+Technology!8m2!3d13.0895621!4d77.5456808!15sCghTYW1iaHJhbSIDiAEBkgEQZWR1Y2F0aW9uX2NlbnRlcuABAA!16s%2Fm%2F0404806!4m8!1m0!1m5!1m1!1s0x3bae2297b21d347b:0xbff7ae2269947666!2m2!1d77.5456808!2d13.0895621!3e9!5m1!1e1?entry=ttu">
               Get Directions
             </a>
           </div>
-          <div className="button" style={{ marginTop: 30 }}>
-            <a href="https://www.google.com/maps/dir//Sambhram+Institute+of+Technology,+Hesaraghatta+Rd,+Jalahalli+East,+Bengaluru,+Karnataka+560097/@13.0895777,77.5431059,17z/data=!4m18!1m8!3m7!1s0x3bae2297b21d347b:0xbff7ae2269947666!2sSambhram+Institute+of+Technology!8m2!3d13.0895621!4d77.5456808!15sCghTYW1iaHJhbSIDiAEBkgEQZWR1Y2F0aW9uX2NlbnRlcuABAA!16s%2Fm%2F0404806!4m8!1m0!1m5!1m1!1s0x3bae2297b21d347b:0xbff7ae2269947666!2m2!1d77.5456808!2d13.0895621!3e9!5m1!1e1?entry=ttu">
-              Get Directions
-            </a>
-          </div>
+          
         </div>
       </div>
       </div>
@@ -152,10 +141,10 @@ const Footer = () => {
           {isDropdownOpen && (
             <div className="dropdown-content">
               {sortedCountryData.map((country) => (
-                <a href="#" key={country.currency}>
+                <a href="#" key={country.currency} className="flex items-center">
                   <img src={country.icon} alt={country.name} />
-                  <span className="country-name">{country.name}</span>
-                  <span className="currency">{country.currency}</span>
+                  <span className="country-name m-2" >{country.name}</span>
+                  <span className="currency ">{country.currency}</span>
                 </a>
               ))}
             </div>
@@ -185,7 +174,7 @@ const Footer = () => {
           <FaCcDiscover color="purple" size={24} />
         </div> */}
 
-        <div className="flex items-center " style={{display: 'block ruby'}}>
+        <div className="flex items-center justify-center" style={{display: 'block ruby'}}>
   <FaCcVisa className="mr-2" color="blue" size={24} />
   <FaCcMastercard className="mr-2" background="white" color="red" size={24} />
   <FaCcAmex className="mr-2" color="blue" size={24} />

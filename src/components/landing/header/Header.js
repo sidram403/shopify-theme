@@ -209,8 +209,7 @@ const Header = () => {
                                   </div>
                                 </div>
                                 <div
-                                  class="arrow-down"
-                                  onclick="toggleDropdown()"
+                                  class="arrow-down-header"
                                 >
                                   <KeyboardArrowDownIcon />
                                 </div>
@@ -225,8 +224,7 @@ const Header = () => {
                                   </div>
                                 </div>
                                 <div
-                                  class="arrow-down"
-                                  onclick="toggleDropdown()"
+                                  class="arrow-down-header"
                                 >
                                   <KeyboardArrowDownIcon />
                                 </div>
