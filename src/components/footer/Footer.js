@@ -47,10 +47,18 @@ const Footer = () => {
   return (
     <div>
       <div className="background ">
+      <div className="background ">
         <a href="https://goo.gl/maps/QyZs1dBswWTdZ8oc6">
+          <img src="images/location.png" alt="location" />
           <img src="images/location.png" alt="location" />
         </a>
         <div className="pickup-card">
+          <h2>Local pickup available</h2>
+          <p>301 Front St W</p>
+          <p>Toronto, Canada</p>
+          <p>Mon - Fri, 8:30am - 10:30pm</p>
+          <p>Saturday, 8:30am - 10:30pm</p>
+          <p>Sunday, 8:30am - 10:30pm</p>
           <h2>Local pickup available</h2>
           <p>301 Front St W</p>
           <p>Toronto, Canada</p>
@@ -63,7 +71,13 @@ const Footer = () => {
               Get Directions
             </a>
           </div>
+          <div className="button" style={{ marginTop: 30 }}>
+            <a href="https://www.google.com/maps/dir//Sambhram+Institute+of+Technology,+Hesaraghatta+Rd,+Jalahalli+East,+Bengaluru,+Karnataka+560097/@13.0895777,77.5431059,17z/data=!4m18!1m8!3m7!1s0x3bae2297b21d347b:0xbff7ae2269947666!2sSambhram+Institute+of+Technology!8m2!3d13.0895621!4d77.5456808!15sCghTYW1iaHJhbSIDiAEBkgEQZWR1Y2F0aW9uX2NlbnRlcuABAA!16s%2Fm%2F0404806!4m8!1m0!1m5!1m1!1s0x3bae2297b21d347b:0xbff7ae2269947666!2m2!1d77.5456808!2d13.0895621!3e9!5m1!1e1?entry=ttu">
+              Get Directions
+            </a>
+          </div>
         </div>
+      </div>
       </div>
       <footer className="footer">
         <div className="container">
