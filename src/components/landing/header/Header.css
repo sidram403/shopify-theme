@@ -147,9 +147,20 @@ option {
   font-size: 16px;
 }
 
+.searchbar{
+  height: 70px !important;
+    padding: 16px !important;
+    background: gray !important;
+}
+.searchbar .completeSearchbar{
+  margin: 0 250px !important;
+  background: white !important;
+}
+
 .stickywrapper {
   height: 115px;
 }
+
 .site-header {
   background: #ffffff;
   padding: 20px 0 0px;
@@ -165,6 +176,7 @@ option {
   display: flex;
   /* flex: 1 1 auto; */
 }
+
 .header-item-left {
   padding: 10px;
 }
@@ -406,5 +418,6 @@ color: #FFFFFF;
     height: 30px;
     margin-top: 10px;
   }
+  
 }
 
