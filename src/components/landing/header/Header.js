@@ -43,7 +43,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 
 const Header = () => {
   const [searchbarShow, setSearchbarShow] = useState(false);
-
+  const [showShop, setShowShop] = useState(false);
   const SearchbarExpand = () => {
     setSearchbarShow(true);
   };
@@ -56,7 +56,7 @@ const Header = () => {
 
   return (
     <div>
-      <div className="header">
+      <div className="header ">
         <div className="responsive-header sm:hidden">
           <div className="grid grid-rows-1 grid-flow-col gap-4">
             <div className="menu-icon">
@@ -175,6 +175,10 @@ const Header = () => {
         )}
         {!searchbarShow && (
           <div className="sticky-header max-sm:hidden">
+           {showShop && <div className="sticky-dropdown">
+               <CategoryShowsCards />
+
+            </div>}
             <div className="stickywrapper">
               <header className="site-header">
                 <div className="page-width">
@@ -200,11 +204,10 @@ const Header = () => {
                           <ul className="site-nav">
                             <li className="site-nav-item">
                               <div class="category-view-on-header">
-                                <div className="border-line">
+                                <div className="border-line" onMouseEnter={() => {setShowShop(true)}}>
                                   <div class="icon">
                                     <span>Shop</span>
                                     <div className="show-category-card">
-                                      <CategoryShowsCards />
                                     </div>
                                   </div>
                                 </div>
