@@ -27,7 +27,6 @@ const Search = styled("div")(({ theme }) => ({
   },
 }));
 
-
 const StyledInputBase = styled(InputBase)(({ theme }) => ({
   color: "inherit",
   "& .MuiInputBase-input": {
@@ -128,7 +127,6 @@ const Header = () => {
         </div>
         {searchbarShow && (
           <div
-            
             classsName="searchbar "
             style={{
               height: 76,
@@ -202,30 +200,30 @@ const Header = () => {
                           <ul className="site-nav">
                             <li className="site-nav-item">
                               <div class="category-view-on-header">
-                                <div class="icon">
-                                  <span className="border-line">Shop</span>
-                                  <div className="show-category-card">
-                                    <CategoryShowsCards />
+                                <div className="border-line">
+                                  <div class="icon">
+                                    <span>Shop</span>
+                                    <div className="show-category-card">
+                                      <CategoryShowsCards />
+                                    </div>
                                   </div>
                                 </div>
-                                <div
-                                  class="arrow-down-header"
-                                >
+                                <div class="arrow-down-header">
                                   <KeyboardArrowDownIcon />
                                 </div>
                               </div>
                             </li>
                             <li className="site-nav-item">
                               <div class="category-view-on-header">
-                                <div class="icon">
-                                  <span className="border-line">Season</span>
-                                  <div className="show-category-card show-category-card-season">
-                                    <SeasonShowsCards />
+                                <div className="border-line">
+                                  <div class="icon">
+                                    <span>Season</span>
+                                    <div className="show-category-card show-category-card-season">
+                                      <SeasonShowsCards />
+                                    </div>
                                   </div>
                                 </div>
-                                <div
-                                  class="arrow-down-header"
-                                >
+                                <div class="arrow-down-header">
                                   <KeyboardArrowDownIcon />
                                 </div>
                               </div>
@@ -240,12 +238,16 @@ const Header = () => {
                         </div>
                         <div className="header-item header-item--split-right max-sm:hidden">
                           <ul className="site-nav">
-                            <li className="site-nav-item">
-                              <span className="border-line">Journal</span>
-                            </li>
-                            <li className="site-nav-item">
-                              <span className="border-line">Features</span>
-                            </li>
+                            <div className="mx-4">
+                              <li className="site-nav-item">
+                                <span className="border-line ">Journal</span>
+                              </li>
+                            </div>
+                            <div className="mx-4">
+                              <li className="site-nav-item">
+                                <span className="border-line ">Features</span>
+                              </li>
+                            </div>
                           </ul>
                         </div>
                       </div>
