@@ -44,6 +44,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 const Header = () => {
   const [searchbarShow, setSearchbarShow] = useState(false);
   const [showShop, setShowShop] = useState(false);
+  const [showSeasonDropdown, setShowSeasonDropdoen] = useState(false);
   const SearchbarExpand = () => {
     setSearchbarShow(true);
   };
@@ -173,10 +174,14 @@ const Header = () => {
             />
           </div>
         )}
-        {!searchbarShow && (
+        
           <div className="sticky-header max-sm:hidden">
-           {showShop && <div className="sticky-dropdown">
-               <CategoryShowsCards />
+           {showShop && <div  className="sticky-dropdown">
+               <CategoryShowsCards setShowShop = {setShowShop} />
+
+            </div>}
+           {showSeasonDropdown && <div className="sticky-dropdown">
+               <SeasonShowsCards setShowSeasonDropdoen = {setShowSeasonDropdoen}/>
 
             </div>}
             <div className="stickywrapper">
@@ -198,13 +203,13 @@ const Header = () => {
                         </div>
                       </div>
                     )}
-                    {!searchbarShow && (
+                    
                       <div className="header-item header-item-logo--split">
                         <div className="header-item header-item--split-left max-sm:hidden">
                           <ul className="site-nav">
                             <li className="site-nav-item">
-                              <div class="category-view-on-header">
-                                <div className="border-line" onMouseEnter={() => {setShowShop(true)}}>
+                              <div class="category-view-on-header"  onMouseEnter={() => {setShowShop(true)}} onMouseLeave={() => {setShowShop(false)}}>
+                                <div className="border-line">
                                   <div class="icon">
                                     <span>Shop</span>
                                     <div className="show-category-card">
@@ -217,12 +222,12 @@ const Header = () => {
                               </div>
                             </li>
                             <li className="site-nav-item">
-                              <div class="category-view-on-header">
+                              <div class="category-view-on-header"  onMouseEnter={() => {setShowSeasonDropdoen(true)}} onMouseLeave={() => {setShowSeasonDropdoen(false)}}>
                                 <div className="border-line">
                                   <div class="icon">
                                     <span>Season</span>
                                     <div className="show-category-card show-category-card-season">
-                                      <SeasonShowsCards />
+                                      
                                     </div>
                                   </div>
                                 </div>
@@ -234,11 +239,12 @@ const Header = () => {
                           </ul>
                         </div>
 
-                        <div className="header-item header-item-logo">
-                          <div className="logo">
-                            <p>LUXETTE</p> <span>PARIS</span>
-                          </div>
-                        </div>
+                    <div className="header-item header-item-logo">
+                      <div className="logo flex items-center">
+                        <p>LUXETTE</p>
+                        <span>PARIS</span>
+                      </div>
+                    </div>
                         <div className="header-item header-item--split-right max-sm:hidden">
                           <ul className="site-nav">
                             <div className="mx-4">
@@ -254,18 +260,18 @@ const Header = () => {
                           </ul>
                         </div>
                       </div>
-                    )}
+                 
                     {!searchbarShow && (
-                      <div className="header-item header-item-icons">
+                      <div className="header-item header-item-icons justify-end">
                         <div className="site-nav">
                           <div className="site-nav-icon">
                             <div className="site-nav-icon-item icons">
                               {/* user icon */}
                               <img src="icons/about.png" alt="" />
                             </div>
-                            <div className="site-nav-icon-item icons">
+                            <div>
                               {/* add cart icon */}
-                              <img src="icons/cart.png" alt="" />
+                              <img src="icons/cart.png" alt="" style={{width:"19px"}}/>
                             </div>
                           </div>
                         </div>
@@ -276,7 +282,7 @@ const Header = () => {
               </header>
             </div>
           </div>
-        )}
+        
         <div className="announcement-bar">
           <div className="page-width">
             <div className="slideshow-wrapper">

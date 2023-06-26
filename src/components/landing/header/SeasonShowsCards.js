@@ -73,8 +73,8 @@ const SeasonShowsCards = () => {
 
 
     return (
-        <div className='h-full w-full'>
-            <div className='lg:mx-48'>
+        <div className='h-full w-full bg-white pb-8' >
+            <div className='lg:mx-48 bg-white'>
                 <div className="bg-white">
                     <div className="mx-auto max-w-2xl  lg:max-w-7xl lg:px-8">
 
