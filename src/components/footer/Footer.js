@@ -3,6 +3,7 @@ import "./Footter.css";
 import { useState } from 'react';
 import { FaCcVisa } from 'react-icons/fa';
 import { FaCcMastercard, FaCcAmex, FaCcPaypal, FaCcDinersClub, FaCcDiscover } from 'react-icons/fa';
+// import {FaCcMastercard}
 
 import { FiMail, FiChevronDown } from 'react-icons/fi';
 
