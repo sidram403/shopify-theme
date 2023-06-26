@@ -9,7 +9,7 @@ const IndexSection = () => {
             <p>
             Fashion inspired by where we're from — the sunny shores of California.
             <br />
-            Products provided by 
+            Products provided by <span className='border-line uppercase '>piko</span>
             </p>
         </div>
       </div>

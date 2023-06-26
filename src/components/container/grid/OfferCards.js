@@ -82,7 +82,7 @@ export default function OfferCards() {
                                             <div className="mt-0 grid grid-cols-1  sm:grid-cols-2 lg:grid-cols-2 ">
                                                 {products.map((product) => (
                                                     <div key={product.id} className="group relative">
-                                                        <div className="aspect-h-1 aspect-w-1 w-full  overflow-hidden rounded-md bg-gray-500 lg:aspect-none group-hover:opacity-75 h-52 ">
+                                                        <div className="aspect-h-1 aspect-w-1 w-full  overflow-hidden rounded-md bg-gray-500 lg:aspect-none  h-52 ">
                                                             <img
                                                                 src={product.imageSrc}
                                                                 alt={product.imageAlt}
@@ -122,7 +122,7 @@ export default function OfferCards() {
                                             <div className="mt-0 grid grid-cols-1  sm:grid-cols-2 lg:grid-cols-2 ">
                                                 {products.map((product) => (
                                                     <div key={product.id} className="group relative">
-                                                        <div className="aspect-h-1 aspect-w-1 w-full  overflow-hidden rounded-md bg-gray-500 lg:aspect-none group-hover:opacity-75 h-52 ">
+                                                        <div className="aspect-h-1 aspect-w-1 w-full  overflow-hidden rounded-md bg-gray-500 lg:aspect-none h-52 ">
                                                             <img
                                                                 src={product.imageSrc}
                                                                 alt={product.imageAlt}

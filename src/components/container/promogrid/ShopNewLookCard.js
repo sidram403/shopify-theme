@@ -19,7 +19,7 @@ const ShopNewLookCard = () => {
 
             </div>
             <div className="group relative grid text-center justify-center">
-              <div className="card-newlook  relative overflow-hidden  lg:mt-24 sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75 sm:h-140">
+              <div className="card-newlook  relative overflow-hidden  lg:mt-24 sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1  sm:h-140">
                 <img
                   src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-04.jpg"
                   alt=""

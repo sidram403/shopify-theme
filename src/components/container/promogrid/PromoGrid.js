@@ -17,7 +17,7 @@ const PromoGrid = () => {
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'cover',
-            height: 600,
+            height: 700,
             display: 'flex',
             alignItems: 'center',
             textAlign: 'center',
@@ -28,25 +28,33 @@ const PromoGrid = () => {
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'cover',
-            height: 600,
+            height: 700,
             display:'flex',
             textAlign:'center',
-            alignItems: 'flex-end',
+            alignItems: 'end',
             justifyContent: 'center',
+            
 
 
         },
         indextext: {
-            color: "#ffffff"
+            color: "#ffffff",
+            paddingBottom:40,
+            width:400
         },
+        
         secondaryText: {
-            fontSize: 25,
+            fontSize: 22,
             fontFamily: "Tenor Sans",
             fontStyle: "normal",
             textTransform: "uppercase",
         },
+        rightText:{
+          fontSize:18,
+          marginBottom:20
+        },
         primaryText: {
-            fontSize: 64,
+            fontSize: 50,
             fontFamily: "Tenor Sans",
             fontStyle: "normal",
             fontWeight: "400",
@@ -67,6 +75,19 @@ const PromoGrid = () => {
             fontSize: 20,
             letterSpacing: 2,
 
+        },
+        heroBtnRight:{
+          textDecoration: "none",
+            padding: 10,
+            backgroundColor: "white",
+            color: "black",
+            textTransform: "uppercase",
+            margin: 20,
+            width: 300,
+            fontStyle: "normal",
+            fontWeight: "400",
+            fontSize: 18,
+            letterSpacing: 2,
         }
 
 
@@ -94,12 +115,13 @@ const PromoGrid = () => {
         <div className="mx-auto  px-4 sm:px-6 ">
           <div className="mx-auto max-w-2xl  lg:max-w-none ">  
             <div className="mt-6 space-y-12 lg:grid lg:grid-cols-2 lg:gap-x-6 lg:space-y-0">
+                
                 <div className="group relative">
-                  <div  className=" relative h-140 w-full overflow-hidden  bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75 sm:h-152">
+                  <div  className=" relative h-140 w-full overflow-hidden  bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1  sm:h-152">
                   <div className='index-content' style={styles.indexContent1}>
                             <div style={styles.indextext}>
-                                <p style={styles.secondaryText}>FRESH LOOKS</p>
-                                <h1 style={styles.primaryText}>FALL ACCESSORIES</h1>
+                                <p style={styles.secondaryText}>Time to get</p>
+                                <h1 style={styles.primaryText}>Beach Ready</h1>
                                 <div className='hero-image-buttons' style={styles.heroButtons}>
                                     <a href="" className='hero-image-btn' style={styles.heroBtn}>Shop ALL</a>
                                     <a href="" className='hero-image-btn' style={styles.heroBtn}>Shop Tops</a>
@@ -111,15 +133,25 @@ const PromoGrid = () => {
                         
                   </div>
                 </div>
+                <a href="#">
                 <div className="group relative">
-                  <div  className=" relative h-140 w-full overflow-hidden  bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75 sm:h-140">
-                  <div className='index-content' style={styles.indexContent1}>
-                            
+                  <div  className=" relative h-140 w-full overflow-hidden  bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1  sm:h-140">
+                  <div className='index-content' style={styles.indexContent2}>
+                  <div style={styles.indextext}>
+                               <h1 style={styles.primaryText}>GIFT CARD</h1>
+                                <p style={styles.rightText}>Help support local business by buying a gift card. Local pickup available!</p>
+                                <div className='hero-image-buttons' style={styles.heroButtons}>
+                                    <a href="" className='hero-image-btn' style={styles.heroBtnRight}>Shop Gift Cards</a>
+
+                                </div>
+                            </div>  
 
                         </div>
                         
                   </div>
                 </div>
+                </a>
+                
             </div>
           </div>
         </div>
