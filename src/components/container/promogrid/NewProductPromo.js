@@ -3,16 +3,18 @@ import React from 'react'
 import './AllPromoCards.css'
 
 const NewProductPromo = () => {
+    
     const styles = {
         indexContent1: {
-            backgroundImage: 'linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url(images/bg3.jpg)',
+            backgroundImage: 'url(images/bg3.jpg)',
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'cover',
             height: 700,
             display: 'flex',
             alignItems: 'center',
-            justifyContent: 'start'
+            justifyContent: 'start',
+
         },
     }
     const bull = (
@@ -48,7 +50,7 @@ const NewProductPromo = () => {
                 <div className="mx-auto max-w-2xl  lg:max-w-none ">
                     <div className="mt-6 space-y-12 lg:grid lg:grid-cols-1 lg:gap-x-6 lg:space-y-0">
                         <div className="group relative">
-                            <div className=" relative h-140 w-full overflow-hidden  bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1  sm:h-152">
+                            <div className="relative h-140 w-full overflow-hidden  bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1  sm:h-152">
                                 <div className='' style={styles.indexContent1}>
                                     <div className='ml-24'>
                                         <Box sx={{ maxWidth: 400, height: 400  }}>
@@ -57,6 +59,7 @@ const NewProductPromo = () => {
                                     </div>
 
                                 </div>
+                                
 
                             </div>
                         </div>

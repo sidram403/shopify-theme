@@ -34,3 +34,43 @@
     letter-spacing: 3px;
     color: gray;
 }
+
+.collection-group-cards:hover{
+    background:rgba(0,0,0,0.3)
+}
+.collection-item{
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    display: block;
+    left: 10px;
+    position: absolute;
+    right: 10px;
+    line-height: 1em;
+    z-index: 2;
+    padding:10px;
+}
+.collection-item::after{
+    background-color: #000000;
+    bottom: 0;
+    content: "";
+    left: 0;
+    opacity: 0.01;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: opacity .8s ease;
+    z-index: auto;
+}
+
+.collection-item > span{
+    font-size: .8em;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    background-color: #ffffff;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    color: #000000;
+    display: inline-block;
+    padding: 8px 15px;
+}

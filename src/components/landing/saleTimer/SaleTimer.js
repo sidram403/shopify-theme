@@ -28,9 +28,9 @@ const SaleTimer = () => {
             <div style={styles.countDownContent}>
                 <div style={styles.countDownContentBlock}>
                         <div style={styles.countDownHeading} className='count-down-heading'>
-                            <h1>Flash Sale</h1>
+                            <h2>Flash Sale</h2>
                         </div>
-                        <div style={styles.countDownrichText}>
+                        <div style={styles.countDownrichText} className='richtext'>
                             <p>get 20% off if you spend 120$ or more!</p>
                         </div>
                 </div>

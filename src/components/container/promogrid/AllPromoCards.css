@@ -2,6 +2,13 @@
     height:350px ;
     width: 400px;
 } */
+
+
+
+.new-look-card{
+    animation: rise-up 1s cubic-bezier(.26,.54,.32,1) .5s forwards;
+
+}
 .new-look-card-content {
     padding: 30px !important;
 }
@@ -26,6 +33,11 @@
     font-size: 18px;
     letter-spacing: 3px;
     margin-bottom: 20px;
+}
+.new-look-card-button button:hover{
+    transition:.3s all;
+    background:#020202;
+    cursor:pointer;
 }
 .new-look-card-newlook{
     height: 700px;

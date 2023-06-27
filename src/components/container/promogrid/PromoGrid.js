@@ -78,7 +78,7 @@ const PromoGrid = () => {
         },
         heroBtnRight:{
           textDecoration: "none",
-            padding: 10,
+            padding: "11px 20px",
             backgroundColor: "white",
             color: "black",
             textTransform: "uppercase",
@@ -86,7 +86,7 @@ const PromoGrid = () => {
             width: 300,
             fontStyle: "normal",
             fontWeight: "400",
-            fontSize: 18,
+            fontSize: 16,
             letterSpacing: 2,
         }
 

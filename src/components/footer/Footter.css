@@ -339,15 +339,18 @@ flex-basis: calc(25% - 100px);
   
   .dropdown-content {
     position: absolute;
-    bottom: calc(100% + 10px); /* Adjust the value as needed */
-    left: 40%;
-    background-color:white;
+    bottom: calc(65% + 10px);
+    left: 45%;
+    background-color: white;
     border: 1px solid #ddd;
     padding: 10px;
     z-index: 1;
     display: flex;
     flex-direction: column;
     align-items: start;
+    width: 400px;
+    overflow-y: scroll;
+    height: 340px;
    
     
   }
