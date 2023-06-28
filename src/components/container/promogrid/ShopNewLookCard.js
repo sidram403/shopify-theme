@@ -5,7 +5,7 @@ const ShopNewLookCard = () => {
     <div className="bg-white">
       <div className="mx-auto  px-4 sm:px-6 ">
         <div className="mx-auto max-w-2xl py-16 lg:max-w-none ">
-          <h2 className="text-4xl font-bold text-gray-600 uppercase tracking-widest	">SHOP THE LOOK</h2>
+          <h2 className="section-header--title text-4xl font-bold text-gray-600 uppercase tracking-widest	">SHOP THE LOOK</h2>
 
           <div className="mt-6 space-y-12 lg:grid lg:grid-cols-4 lg:gap-x-12 lg:space-y-0">
             <div className="group relative col-span-3">

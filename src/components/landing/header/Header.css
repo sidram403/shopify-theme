@@ -159,6 +159,32 @@ option {
   background: white !important;
 }
 
+
+.cart-header-section .cart-close-btn{
+  display: flex;
+    text-align: end;
+    justify-content: end;
+    padding: 10px;
+}
+
+.cart-header .css-10hburv-MuiTypography-root	{
+  font-size: calc(36px*.85);
+  font-family: "Tenor Sans",sans-serif;
+  line-height: 1;
+  font-weight: 400;
+}
+
+.cart-content .css-tlelie-MuiListItemText-root{
+  margin-top: 30px !important;
+}
+
+.cart-content-text .css-10hburv-MuiTypography-root{
+  font-family: "Twentieth Century", sans-serif !important;
+  font-size: 18px;
+  letter-spacing: 0.025em;
+
+}
+
 .sticky-header{
   position:relative;
 }

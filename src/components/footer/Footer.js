@@ -11,7 +11,7 @@ import {
 } from "react-icons/fa";
 // import {FaCcMastercard}
 
-import { FiMail, FiChevronDown } from "react-icons/fi";
+import { FiMail } from "react-icons/fi";
 
 const Footer = () => {
   const [selectedCountryValue, setSelectedCountryValue] = useState([
@@ -240,7 +240,7 @@ const Footer = () => {
                 >
                   <a href="#" className="flex items-center">
                     <img src={country.icon} alt="country" />
-                    <span className="country-name text-black ml-4">
+                    <span className="country-name text-black ml-4 ">
                       {country.name}
                     </span>
                     {/* <span className="currency text-black ml-1"></span> */}

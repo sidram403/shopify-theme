@@ -1,0 +1,10 @@
+.popular-product-name a{
+    font-size: calc(18px - 2px);
+    letter-spacing: .2em;
+    text-transform: uppercase;
+}
+.popular-product-price{
+    color: #1c1d1d;
+    font-size: calc(18px*.85);
+    margin-top: 5px;
+}

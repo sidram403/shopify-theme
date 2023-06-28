@@ -1,9 +1,10 @@
 import React from 'react'
+import './Popular.css'
 
 const products = [
     {
         id: 1,
-        name: 'Basic Tee',
+        name: 'Dove Gray Dolman sleeve',
         href: '#',
         imageSrc: 'images/p1.png',
         imageAlt: "Front of men's Basic Tee in black.",
@@ -13,7 +14,7 @@ const products = [
     },
     {
         id: 1,
-        name: 'Basic Tee',
+        name: 'Army Babydoll dress',
         href: '#',
         imageSrc: 'images/p2.png',
         imageAlt: "Front of men's Basic Tee in black.",
@@ -24,7 +25,7 @@ const products = [
     },
     {
         id: 1,
-        name: 'Basic Tee',
+        name: 'White v-neck short sleeve',
         href: '#',
         imageSrc: 'images/p1.png',
         imageAlt: "Front of men's Basic Tee in black.",
@@ -35,7 +36,7 @@ const products = [
     },
     {
         id: 1,
-        name: 'Basic Tee',
+        name: 'Color block pocket tee',
         href: '#',
         imageSrc: 'images/p2.png',
         imageAlt: "Front of men's Basic Tee in black.",
@@ -44,6 +45,7 @@ const products = [
         originalPrice: ''
 
     },
+
     // More products...
 ]
 const PopularCards = () => {
@@ -76,16 +78,16 @@ const PopularCards = () => {
                                     </div>
                                 }
                             </div>
-                            <div className="mt-4 flex text-center justify-center">
+                            <div className="mt-2 flex text-center justify-center">
                                 <div >
-                                    <h3 className="text-sm text-gray-700">
+                                    <h3 className="popular-product-name text-center ">
                                         <a href={product.href}>
                                             <span aria-hidden="true" className="absolute inset-0 text-center" />
                                             {product.name}
                                         </a>
                                     </h3>
 
-                                    <p className="text-sm font-medium text-gray-900 text-center ">
+                                    <p className="popular-product-price text-sm font-medium text-gray-900 text-center ">
                                         {product.originalPrice !== '' && <s className='mr-4'>${product.originalPrice}{" "}</s>}
                                         ${product.price} {product.originalPrice !== '' && <span className='ml-2 text-red-500'>Save $ {parseInt(product.originalPrice, 10) - parseInt(product.price, 10)}</span>}</p>
 

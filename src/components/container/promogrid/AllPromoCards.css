@@ -3,6 +3,10 @@
     width: 400px;
 } */
 
+.hero-image-buttons a:hover{
+    transition: .3s all;
+    background-color: rgb(88, 80, 121);
+}
 
 
 .new-look-card{

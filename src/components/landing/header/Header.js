@@ -7,6 +7,7 @@ import CategoryShowsCards from "./CategoryShowsCards";
 import SeasonShowsCards from "./SeasonShowsCards";
 import { alpha, styled } from "@mui/material";
 import InputBase from "@mui/material/InputBase";
+import CartPopup from "./CartPopup";
 
 // import { InstagramFilled } from "@ant-design/icons";
 // import { InstagramOutlined } from "@ant-design/icons/lib/icons";
@@ -343,15 +344,12 @@ const Header = () => {
                       <div className="site-nav-icon">
                         <div className="site-nav-icon-item icons">
                           {/* user icon */}
-                          <img src="icons/about.png" alt="about" />
+                          <img className="cursor-pointer" src="icons/about.png" alt="about" />
                         </div>
                         <div>
-                          {/* add cart icon */}
-                          <img
-                            src="icons/cart.png"
-                            alt="cart"
-                            style={{ width: "19px" }}
-                          />
+                          
+                          {/* Cart Icon */}
+                          <CartPopup />
                         </div>
                       </div>
                     </div>

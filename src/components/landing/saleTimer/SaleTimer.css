@@ -42,8 +42,8 @@
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
-    letter-spacing: 2px;
-    color: #453c3c;
+    letter-spacing: 0.05em;
+    color: #6b6868;
 }
 .each-countdown{
     width: 90px;

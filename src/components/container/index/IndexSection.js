@@ -4,7 +4,7 @@ import './IndexSection.css'
 const IndexSection = () => {
   return (
     <div className='index-section'>
-      <div className='page-width text-center'>
+      <div className='page-width text-center' style={{fontSize:18}}>
         <div className='enlarge-text'>
             <p>
             Fashion inspired by where we're from — the sunny shores of California.
